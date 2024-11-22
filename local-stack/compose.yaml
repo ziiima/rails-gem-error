@@ -1,0 +1,10 @@
+services:
+  library_container:
+    container_name: library_container
+    build:
+      context: .
+      dockerfile: ./tmp.ruby.dockerfile
+    tty: true
+    restart: on-failure
+    volumes:
+      - ../:/usr/src/app
