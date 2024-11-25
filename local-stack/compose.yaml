@@ -4,6 +4,9 @@ services:
     build:
       context: .
       dockerfile: ./tmp.ruby.dockerfile
+      args:
+        - RUBY_VERSION=3.3.6
+        - GEM_VERSION=3.5.23
     tty: true
     restart: on-failure
     volumes:

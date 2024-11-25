@@ -1,3 +1,9 @@
+dcompose = docker compose -f ./local-stack/compose.yaml
+
 .PHONY: up
 up:
-	docker compose --file ./local-stack/compose.yaml up -d
+	$(dcompose) up -d
+
+.PHONY: build
+build:
+	$(dcompose) up --build -d

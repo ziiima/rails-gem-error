@@ -1,0 +1,5 @@
+example_id                  | status | run_time        |
+--------------------------- | ------ | --------------- |
+./spec/baz_spec.rb[1:1]     | passed | 0.00048 seconds |
+./spec/foo/bar_spec.rb[1:1] | passed | 0.00006 seconds |
+./spec/hello_spec.rb[1:1]   | passed | 0.00003 seconds |
